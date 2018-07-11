@@ -1,0 +1,45 @@
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Jua|Yeon+Sung');
+
+    .luck_random {
+        width: 100%;
+        padding-top: 250px;
+        margin: 0 auto;
+        color: white;
+        font-family: 'Yeon Sung', cursive;
+        text-align: center;
+        font-size: 40px;
+    }
+    
+    .imgg {
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+    }
+</style>
+
+<% if @random == 1 %>
+    <div class ="luck_random">
+        <img class="imgg" src="https://item.kakaocdn.net/do/4be9625c0426fb7d21c0bff1e8af2e1df43ad912ad8dd55b04db6a64cddaf76d"/>
+        <p>오늘의 운세 :</p>
+        <p>느낌이 너무 좋다! 하는 일마다 다 잘 될지도?!</p>
+        <p>로또 당첨될 것 같은 이 느낌!</p>
+    </div>
+<% elsif @random == 2 %>
+    <div class ="luck_random">
+        <img class="imgg" src="http://upload2.inven.co.kr/upload/2016/05/10/bbs/i10764689262.gif"/>
+        <p>오늘의 운세 :</p>
+        <p>뭐지... 이 찜찜함은...?</p>
+        <p>오늘 하루 조심해야 될거같은데...</p>
+        <p>똥 밟을지도 모르니 돌다리도 두드리고 건너자!</p>
+    </div>
+<% elsif @random == 3 %>
+    <div class ="luck_random">
+        <img class="imgg" src="https://item.kakaocdn.net/do/f557e4c6ccd84cf7ec9e57b2fb6a4d93f43ad912ad8dd55b04db6a64cddaf76d"/>
+        <p>오늘의 운세 :</p>
+        <p>평범한 하루!</p>
+        <p>늘 그렇듯 일상적인 하루네요!</p>
+        <p>오늘 당신의 행동에 따라 바뀔지 모르니</p>
+        <p>신중히 행동하는 것도 좋은 생각!</p>
+    </div>
+<% end %>
